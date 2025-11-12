@@ -18,7 +18,7 @@ export default function App() {
     {
       icon: <Cpu className="w-8 h-8" />,
       title: "Programmazione PLC & SCADA",
-      description: "Sviluppo logiche di automazione (Siemens S7-1200/1500, TIA Portal, Step7). HMI & SCADA con interfacce intuitive.",
+      description: "Sviluppo logiche di automazione su Siemens, Allen-Bradley, Schneider, Omron, Mitsubishi e altri PLC. HMI & SCADA con interfacce intuitive per una gestione efficiente dei processi industriali.",
       color: "from-blue-500 to-cyan-500"
     },
     {
@@ -29,8 +29,8 @@ export default function App() {
     },
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "Robot Integration & AI",
-      description: "Programmazione robot (KUKA, ABB, Fanuc). Simulazione offline con RobotStudio e Process Simulate.",
+      title: "Supporto Tecnico e Ingegneria Documentale",
+      description: "Analisi tecnica, progettazione elettrica 2D e creazione di documentazione tecnica avanzata per impianti industriali automatizzati.",
       color: "from-orange-500 to-red-500"
     },
     {
@@ -60,7 +60,7 @@ export default function App() {
     },
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "Industria 4.0 & IA",
+      title: "Industria 4.0",
       description: "Integriamo progressivamente tecnologie avanzate per creare una differenziazione competitiva duratura."
     }
   ];
@@ -82,13 +82,12 @@ export default function App() {
               <img 
                 src="/awd-logo.png" 
                 alt="AWD Engineering Logo" 
-                className="h-32 w-auto"
+                className="h-20 w-auto"
                 style={{filter: 'drop-shadow(0 0 20px rgba(6, 182, 212, 0.6))'}}
               />
             </div>
             
             <div className="hidden md:flex space-x-8">
-              <a href="#chisiamo" className="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Chi Siamo</a>
               <a href="#servizi" className="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Servizi</a>
               <a href="#valori" className="text-slate-300 hover:text-cyan-400 transition-colors font-medium">I Nostri Valori</a>
               <a href="#contatti" className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all font-semibold">
@@ -105,7 +104,6 @@ export default function App() {
         {mobileMenuOpen && (
           <div className="md:hidden bg-slate-950/95 backdrop-blur-lg border-t border-cyan-500/20">
             <div className="px-4 py-6 space-y-4">
-              <a href="#chisiamo" className="block text-slate-300 hover:text-cyan-400 font-medium">Chi Siamo</a>
               <a href="#servizi" className="block text-slate-300 hover:text-cyan-400 font-medium">Servizi</a>
               <a href="#valori" className="block text-slate-300 hover:text-cyan-400 font-medium">I Nostri Valori</a>
               <a href="#contatti" className="block px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-center font-semibold">
@@ -177,111 +175,6 @@ export default function App() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Chi Siamo Section */}
-      <section id="chisiamo" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/30 via-slate-950 to-blue-950/30"></div>
-        
-        {/* Animated tech lines */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(rgba(6, 182, 212, 0.3) 2px, transparent 2px),
-                              linear-gradient(90deg, rgba(6, 182, 212, 0.3) 2px, transparent 2px)`,
-            backgroundSize: '100px 100px',
-            animation: 'slide 20s linear infinite'
-          }}></div>
-        </div>
-
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
-              Chi Siamo
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-8"></div>
-          </div>
-
-          {/* Histoire inspirante */}
-          <div className="max-w-4xl mx-auto mb-20">
-            <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-sm rounded-3xl p-12 border border-cyan-500/30 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
-              
-              <div className="relative">
-                <div className="text-6xl text-cyan-400 mb-6 opacity-50">"</div>
-                <p className="text-2xl md:text-3xl text-white leading-relaxed mb-6 font-light italic">
-                  Siamo ingegneri e sognatori. Crediamo che i dati industriali siano un capitale dormiente.
-                </p>
-                <p className="text-2xl md:text-3xl text-cyan-400 leading-relaxed font-semibold italic">
-                  La nostra missione è risvegliarlo.
-                </p>
-                <div className="text-6xl text-cyan-400 text-right opacity-50">"</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Team cards */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="group relative bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/20">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform">
-                  <span className="text-4xl">👨‍💼</span>
-                </div>
-                <h3 className="text-2xl font-bold text-cyan-400 mb-2">CEO</h3>
-                <p className="text-lg text-slate-300 mb-4">Programmatore PLC</p>
-                <p className="text-sm text-slate-400 leading-relaxed">
-                  Esperto in logiche di automazione e gestione strategica aziendale
-                </p>
-              </div>
-            </div>
-
-            <div className="group relative bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/20">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform">
-                  <span className="text-4xl">⚙️</span>
-                </div>
-                <h3 className="text-2xl font-bold text-cyan-400 mb-2">Ingegnere</h3>
-                <p className="text-lg text-slate-300 mb-4">Automatismo</p>
-                <p className="text-sm text-slate-400 leading-relaxed">
-                  Specialista in sistemi di controllo e automazione industriale
-                </p>
-              </div>
-            </div>
-
-            <div className="group relative bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/20">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform">
-                  <span className="text-4xl">💻</span>
-                </div>
-                <h3 className="text-2xl font-bold text-cyan-400 mb-2">Ingegnere</h3>
-                <p className="text-lg text-slate-300 mb-4">Digitalizzazione & Automazione</p>
-                <p className="text-sm text-slate-400 leading-relaxed">
-                  Esperto in trasformazione digitale e soluzioni Industry 4.0
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Vision statement */}
-          <div className="mt-16 text-center">
-            <div className="inline-block bg-slate-900/50 backdrop-blur-sm rounded-2xl px-8 py-6 border border-cyan-500/20">
-              <p className="text-xl text-slate-300 leading-relaxed">
-                <span className="text-cyan-400 font-semibold">Insieme</span>, trasformiamo la complessità industriale in 
-                <span className="text-cyan-400 font-semibold"> opportunità digitali</span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <style jsx>{`
-          @keyframes slide {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(100px, 100px); }
-          }
-        `}</style>
       </section>
 
       {/* Values Section */}
@@ -390,14 +283,13 @@ export default function App() {
             Pronti per la Trasformazione Digitale?
           </h2>
           <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-            Contattateci per scoprire come possiamo ottimizzare i vostri processi produttivi 
-            con soluzioni su misura di automazione, robotica e intelligenza artificiale.
+            Contattateci per scoprire come possiamo ottimizzare i vostri processi produttivi con soluzioni su misura di digitalizzazione, IoT e sistemi SCADA, riducendo consumi energetici, costi operativi e impatto ambientale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:info@awdengineering.it" className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all">
+            <a href="mailto:info@awd-engineering.com" className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all">
               Richiedi Consulenza Gratuita
             </a>
-            <a href="tel:+39123456789" className="px-8 py-4 border-2 border-cyan-500/50 rounded-full text-lg font-semibold hover:border-cyan-400 hover:bg-cyan-500/10 transition-all">
+            <a href="tel:+390287199354" className="px-8 py-4 border-2 border-cyan-500/50 rounded-full text-lg font-semibold hover:border-cyan-400 hover:bg-cyan-500/10 transition-all">
               Chiamaci Ora
             </a>
           </div>
@@ -416,9 +308,7 @@ export default function App() {
                 style={{filter: 'drop-shadow(0 0 15px rgba(6, 182, 212, 0.5))'}}
               />
               <p className="text-slate-400 text-sm leading-relaxed">
-                Automazione industriale con sede a Milano.
-
-                Partner affidabile per la trasformazione digitale.
+                Automazione industriale con sede a Milano. Partner affidabile per la trasformazione digitale.
               </p>
             </div>
             
@@ -427,8 +317,6 @@ export default function App() {
               <ul className="space-y-2 text-sm text-slate-300">
                 <li className="hover:text-cyan-400 transition-colors cursor-pointer">Programmazione PLC</li>
                 <li className="hover:text-cyan-400 transition-colors cursor-pointer">Machine Revamping</li>
-                <li className="hover:text-cyan-400 transition-colors cursor-pointer">Robot Integration</li>
-                <li className="hover:text-cyan-400 transition-colors cursor-pointer">AI & Machine Vision</li>
                 <li className="hover:text-cyan-400 transition-colors cursor-pointer">Production Optimization</li>
               </ul>
             </div>
@@ -438,7 +326,7 @@ export default function App() {
               <ul className="space-y-2 text-sm text-slate-300">
                 <li>📍 Sede legale: Via G. Rossini 15, 20017, Rho (MI)</li>
                 <li className="hover:text-cyan-400 transition-colors">✉️ info@awd-engineering.com</li>
-                <li className="hover:text-cyan-400 transition-colors">📞 +39 123 456 789</li>
+                <li className="hover:text-cyan-400 transition-colors">📞 +39 0287199354</li>
               </ul>
             </div>
           </div>
